@@ -11,6 +11,8 @@ codigo/
 ├── index.html          → solo la ESTRUCTURA (contenedores vacíos con id)
 ├── styles.css          → estilos (de la Clase 03, + tags de proyectos)
 ├── datos.json          → TU CONTENIDO: nombre, skills, proyectos, redes
+├── documentos/
+│   └── Kevin Pedraza actividad-evaluativa-clase04.docx
 └── js/
     ├── main.js         → director de orquesta (importa y arranca todo)
     ├── Tema.js         → clase: modo claro/oscuro (+ recuerda con localStorage)
@@ -18,7 +20,6 @@ codigo/
     ├── GitHubAPI.js    → clase: pide tus datos reales a la API de GitHub
     ├── Contacto.js     → clase: valida el formulario y envía el correo
     ├── Animaciones.js  → clase: reveal al scroll, contadores, anime.js
-    └── tare1.js        → clase: tarea 1 
 ```
 
 > **Idea clave:** para actualizar tu portafolio **no tocas el HTML ni el JS**, solo
