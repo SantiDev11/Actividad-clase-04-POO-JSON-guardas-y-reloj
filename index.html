@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de desarrollador ADSO, SENA Bucaramanga.">
+  <title>Cargando…</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <!-- Tipografías modernas (Google Fonts). Si la red falla, caen a las del sistema. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=JetBrains+Mono:wght@500&display=swap">
+  <!-- Iconos (Font Awesome por CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Botón de tema (claro/oscuro) -->
+  <button id="btn-tema" class="theme-toggle" aria-label="Cambiar tema">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+
+  <!-- Barra de navegación (aparece al hacer scroll) -->
+  <nav class="nav" id="nav" aria-label="Principal">
+    <a href="#inicio" class="nav__logo">&lt;/&gt;</a>
+    <ul class="nav__links">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#github">GitHub</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO (el texto lo rellena Portafolio.js desde datos.json) ===== -->
+  <header class="hero" id="inicio">
+    <div class="hero__aurora" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="eyebrow reveal" id="p-eyebrow">·</p>
+      <h1 class="hero__title reveal">
+        Hola, soy <span class="grad" id="p-nombre">…</span><span class="cursor">_</span>
+      </h1>
+      <p class="hero__lead reveal" id="p-resumen">…</p>
+      <p class="muted reveal" id="p-titulo" style="margin-top:-1rem;margin-bottom:2rem"></p>
+      <p class="hero__subtitle reveal" id="p-frase"></p>
+      <div class="hero__cta reveal"> 
+        <a href="#github" class="btn btn--primary"><i class="fa-brands fa-github"></i> Ver mi trabajo</a>
+        <a href="#contacto" class="btn btn--ghost">Contáctame</a>
+      </div>
+    </div>
+    <a href="#sobre-mi" class="hero__scroll" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></a>
+  </header>
+
+  <main>
+    <!-- ===== SOBRE MÍ ===== -->
+    <section class="section" id="sobre-mi">
+      <p class="eyebrow reveal">01 — Quién soy</p>
+      <div class="about reveal">
+        <figure class="about__photo">
+          <img id="gh-avatar" src="img/fotoperfil.jpeg" alt="Foto de perfil de Kevin Pedraza">
+        </figure>
+        <div class="about__text">
+          <h2>Sobre mí</h2>
+          <div id="sobre-mi-texto">
+            <p>¡Hola! Mi nombre es Kevin Pedraza, tengo 19 años y vivo en Floridablanca, Santander. Actualmente me encuentro en formación como aprendiz del programa Análisis y Desarrollo de Software (ADSO) en el SENA Bucaramanga.</p>
+            <p>Me apasiona crear soluciones de software modernas, explorar la inteligencia artificial y aprender nuevas tecnologías de desarrollo web y de escritorio.</p>
+          </div>
+          <p class="muted" style="display:flex; flex-direction:column; gap:0.4rem; margin-top:1rem;">
+            <span><i class="fa-solid fa-location-dot" style="color:var(--accent); width:1.2rem;"></i> <strong>Ubicación:</strong> Floridablanca, Santander, Colombia</span>
+            <span><i class="fa-solid fa-graduation-cap" style="color:var(--accent); width:1.2rem;"></i> <strong>Formación:</strong> ADSO — SENA Bucaramanga</span>
+            <span><i class="fa-solid fa-rocket" style="color:var(--accent); width:1.2rem;"></i> <strong>Enfoque:</strong> Desarrollo Web &amp; Inteligencia Artificial</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+      <p class="eyebrow reveal">02 — Lo que sé hacer</p>
+      <h2 class="reveal">Skills</h2>
+      <ul class="skills reveal" id="skills-lista"><!-- se llena desde JSON --></ul>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section class="section" id="proyectos">
+      <p class="eyebrow reveal">03 — Lo que he construido</p>
+      <h2 class="reveal">Proyectos</h2>
+      <div class="repos reveal" id="proyectos-lista">
+        <!-- 1. AI Code Analyzer -->
+        <article class="repo reveal">
+          <div style="font-size:0.75rem; color:var(--muted); text-transform:uppercase; font-family:'JetBrains Mono', monospace; margin-bottom:0.2rem;">
+            IA &amp; Full Stack
+          </div>
+          <h3><i class="fa-solid fa-folder-open"></i> AI Code Analyzer</h3>
+          <p>Aplicación web full stack para radiografiar repositorios de GitHub con métricas de calidad, estructura Git Tree y evaluación técnica con Inteligencia Artificial.</p>
+          <div class="repo__tags">
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Docker</span>
+          </div>
+          <div class="repo__foot">
+            <a href="https://github.com/SantiDev11/AI-Code-Analyzer" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Código →</a>
+            <a href="https://github.com/SantiDev11/AI-Code-Analyzer" target="_blank" rel="noopener noreferrer">Ver demo →</a>
+          </div>
+        </article>
+
+        <!-- 2. Launcher ATS -->
+        <article class="repo reveal">
+          <div style="font-size:0.75rem; color:var(--muted); text-transform:uppercase; font-family:'JetBrains Mono', monospace; margin-bottom:0.2rem;">
+            Escritorio / C#
+          </div>
+          <h3><i class="fa-solid fa-folder-open"></i> Launcher ATS</h3>
+          <p>Launcher funcional y personalizado para optimizar la experiencia en American Truck Simulator con gestión de mods.</p>
+          <div class="repo__tags">
+            <span class="tag">C#</span>
+            <span class="tag">.NET</span>
+            <span class="tag">Desktop UI</span>
+          </div>
+          <div class="repo__foot">
+            <a href="https://github.com/SantiDev11/launcher-victor-trucks-backend.git" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Código →</a>
+            <a href="https://github.com/SantiDev11/launcher-victor-trucks-backend.git" target="_blank" rel="noopener noreferrer">Ver demo →</a>
+          </div>
+        </article>
+
+        <!-- 3. Portafolio Personal -->
+        <article class="repo reveal">
+          <div style="font-size:0.75rem; color:var(--muted); text-transform:uppercase; font-family:'JetBrains Mono', monospace; margin-bottom:0.2rem;">
+            Web / En Vivo
+          </div>
+          <h3><i class="fa-solid fa-folder-open"></i> Portafolio Personal</h3>
+          <p>Sitio web interactivo con diseño UI futurista, dark mode y arquitectura 100% CSS puro de alto rendimiento.</p>
+          <div class="repo__tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS Moderno</span>
+            <span class="tag">Cyberpunk UI</span>
+          </div>
+          <div class="repo__foot">
+            <a href="https://github.com/SantiDev11/portafolio-Kevin-Pedraza" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Código →</a>
+            <a href="https://github.com/SantiDev11/portafolio-Kevin-Pedraza" target="_blank" rel="noopener noreferrer">Ver demo →</a>
+          </div>
+        </article>
+
+        <!-- 4. Dashboard Techcorp -->
+        <article class="repo reveal">
+          <div style="font-size:0.75rem; color:var(--muted); text-transform:uppercase; font-family:'JetBrains Mono', monospace; margin-bottom:0.2rem;">
+            Frontend / Web
+          </div>
+          <h3><i class="fa-solid fa-folder-open"></i> Dashboard Techcorp</h3>
+          <p>Panel de administración con visualización de métricas, navegación intuitiva y diseño corporativo responsivo.</p>
+          <div class="repo__tags">
+            <span class="tag">Dashboard</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">CSS Grid</span>
+          </div>
+          <div class="repo__foot">
+            <a href="https://github.com/SantiDev11/techcorp-crm-php.git" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Código →</a>
+            <a href="https://github.com/SantiDev11/techcorp-crm-php.git" target="_blank" rel="noopener noreferrer">Ver demo →</a>
+          </div>
+        </article>
+
+        <!-- 5. Landing Agencia de Viajes -->
+        <article class="repo reveal">
+          <div style="font-size:0.75rem; color:var(--muted); text-transform:uppercase; font-family:'JetBrains Mono', monospace; margin-bottom:0.2rem;">
+            Landing Page
+          </div>
+          <h3><i class="fa-solid fa-folder-open"></i> Landing Agencia de Viajes</h3>
+          <p>Página de aterrizaje optimizada para reservas de paquetes turísticos con diseño llamativo y estructurado.</p>
+          <div class="repo__tags">
+            <span class="tag">Landing</span>
+            <span class="tag">Flexbox</span>
+            <span class="tag">CSS Puro</span>
+          </div>
+          <div class="repo__foot">
+            <a href="https://github.com/SantiDev11/LandiPage-Aventura-Global-Viajes.git" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Código →</a>
+            <a href="https://github.com/SantiDev11/LandiPage-Aventura-Global-Viajes.git" target="_blank" rel="noopener noreferrer">Ver demo →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== GITHUB (datos reales por API) ===== -->
+    <section class="section" id="github">
+      <p class="eyebrow reveal">04 — Datos reales</p>
+      <h2 class="reveal"><i class="fa-brands fa-github"></i> Mi GitHub</h2>
+      <div class="stats reveal">
+        <div class="stat"><span class="stat__num" id="stat-repos">0</span><span class="stat__label">Repositorios</span></div>
+        <div class="stat"><span class="stat__num" id="stat-followers">0</span><span class="stat__label">Seguidores</span></div>
+        <div class="stat"><span class="stat__num" id="stat-following">0</span><span class="stat__label">Siguiendo</span></div>
+      </div>
+      <div class="repos reveal" id="gh-repos"><p class="muted">Cargando repositorios…</p></div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="section" id="contacto">
+      <p class="eyebrow reveal">05 — Hablemos</p>
+      <h2 class="reveal">Contacto</h2>
+      <form id="form-contacto" class="form reveal">
+        <div class="form__row">
+          <label>Nombre <input type="text" name="nombre" placeholder="¿Cómo te llamas?"></label>
+          <label>Correo <input type="email" name="correo" placeholder="tucorreo@ejemplo.com"></label>
+        </div>
+        <label>Mensaje <textarea name="mensaje" rows="4" placeholder="Cuéntame…"></textarea></label>
+        <p id="form-msg" class="form__msg" role="status"></p>
+        <button type="submit" class="btn btn--primary"><i class="fa-solid fa-paper-plane"></i> Enviar mensaje</button>
+        <button type="button" id="btn-imprimir" class="btn btn--ghost">🖨️ Imprimir CV</button>
+      </form>
+      <!-- Redes: los enlaces los rellena Portafolio.js desde datos.json -->
+      <address class="social">
+        <a id="red-github" href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a id="red-linkedin" href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a id="red-correo" href="#" aria-label="Correo"><i class="fa-solid fa-envelope"></i></a>
+      </address>
+
+      <!-- Badge OFICIAL de LinkedIn. Portafolio.js le pone tu usuario (data-vanity)
+           desde datos.json y carga el script de LinkedIn que lo dibuja. Si no hay
+           internet, se ve el enlace de respaldo de adentro. -->
+      <div class="linkedin-badge reveal" id="linkedin-badge">
+        <div class="badge-base LI-profile-badge"
+             data-locale="es_ES" data-size="medium" data-theme="dark"
+             data-type="VERTICAL" data-vanity="tu-usuario" data-version="v1">
+          <a class="badge-base__link LI-simple-link" id="li-link"
+             href="#" target="_blank" rel="noopener">Ver mi perfil de LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Hecho con <span class="grad">HTML · CSS · JS modular</span> en el curso de ADSO · SENA</p>
+    <p class="muted">Contenido cargado desde <code>datos.json</code> · © 2026</p>
+    <p id="reloj"></p>
+  </footer>
+
+  <!-- Un solo punto de entrada; él importa las demás clases (módulos ES) -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

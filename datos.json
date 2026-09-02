@@ -1,0 +1,117 @@
+{
+  "perfil": {
+    "nombre": "Kevin Pedraza",
+    "titulo": "Aprendiz ADSO — SENA Bucaramanga",
+    "eyebrow": "Aprendiz ADSO · SENA Bucaramanga",
+    "resumen": "Aprendiz de Análisis y Desarrollo de Software en el SENA Bucaramanga, apasionado por crear soluciones de software modernas, explorar la Inteligencia Artificial y aprender nuevas tecnologías.",
+    "ubicacion": "Floridablanca, Santander, Colombia",
+    "correo": "[EMAIL_ADDRESS]",
+    "frase": "si lo imaginas lo puedes programar 👻😮‍💨"
+  },
+  "sobreMi": [
+    "¡Hola! Mi nombre es Kevin Pedraza, tengo 19 años y vivo en Floridablanca, Santander. Actualmente me encuentro en formación como aprendiz del programa Análisis y Desarrollo de Software (ADSO) en el SENA Bucaramanga.",
+    "Me apasiona crear soluciones de software modernas, explorar la inteligencia artificial y aprender nuevas tecnologías de desarrollo web y de escritorio."
+  ],
+  "skills": [
+    {
+      "nombre": "HTML5",
+      "nivel": 45,
+      "icono": "fa-brands fa-html5"
+    },
+    {
+      "nombre": "CSS3 Moderno",
+      "nivel": 45,
+      "icono": "fa-brands fa-css3-alt"
+    },
+    {
+      "nombre": "PHP",
+      "nivel": 40,
+      "icono": "fa-brands fa-php"
+    },
+    {
+      "nombre": "Python",
+      "nivel": 40,
+      "icono": "fa-brands fa-python"
+    },
+    {
+      "nombre": "Git & GitHub",
+      "nivel": 45,
+      "icono": "fa-brands fa-git-alt"
+    },
+    {
+      "nombre": "Inteligencia Artificial",
+      "nivel": 40,
+      "icono": "fa-solid fa-brain"
+    },
+    {
+      "nombre": "POO (PHP / Python)",
+      "nivel": 40,
+      "icono": "fa-solid fa-cubes"
+    }
+  ],
+  "proyectos": [
+    {
+      "nombre": "AI Code Analyzer",
+      "descripcion": "Aplicación web full stack para radiografiar repositorios de GitHub con métricas de calidad, estructura Git Tree y evaluación técnica con Inteligencia Artificial.",
+      "tags": [
+        "Python",
+        "FastAPI",
+        "React",
+        "TypeScript",
+        "Docker"
+      ],
+      "enlace": "https://github.com/SantiDev11/AI-Code-Analyzer",
+      "repo": "https://github.com/SantiDev11/AI-Code-Analyzer"
+    },
+    {
+      "nombre": "Launcher ATS",
+      "descripcion": "Launcher funcional y personalizado para optimizar la experiencia en American Truck Simulator con gestión de mods.",
+      "tags": [
+        "C#",
+        ".NET",
+        "Desktop UI"
+      ],
+      "enlace": "https://github.com/SantiDev11/launcher-victor-trucks-backend.git",
+      "repo": "https://github.com/SantiDev11/launcher-victor-trucks-backend.git"
+    },
+    {
+      "nombre": "Portafolio Personal",
+      "descripcion": "Sitio web interactivo con diseño UI futurista, dark mode y arquitectura 100% CSS puro de alto rendimiento.",
+      "tags": [
+        "HTML5",
+        "CSS Moderno",
+        "Cyberpunk UI"
+      ],
+      "enlace": "https://github.com/SantiDev11/portafolio-Kevin-Pedraza",
+      "repo": "https://github.com/SantiDev11/portafolio-Kevin-Pedraza"
+    },
+    {
+      "nombre": "Dashboard Techcorp",
+      "descripcion": "Panel de administración con visualización de métricas, navegación intuitiva y diseño corporativo responsivo.",
+      "tags": [
+        "Dashboard",
+        "UI/UX",
+        "CSS Grid"
+      ],
+      "enlace": "https://github.com/SantiDev11/techcorp-crm-php.git",
+      "repo": "https://github.com/SantiDev11/techcorp-crm-php.git"
+    },
+    {
+      "nombre": "Landing Agencia de Viajes",
+      "descripcion": "Página de aterrizaje optimizada para reservas de paquetes turísticos con diseño llamativo y estructurado.",
+      "tags": [
+        "Landing",
+        "Flexbox",
+        "CSS Puro"
+      ],
+      "enlace": "https://github.com/SantiDev11/LandiPage-Aventura-Global-Viajes.git",
+      "repo": "https://github.com/SantiDev11/LandiPage-Aventura-Global-Viajes.git"
+    }
+  ],
+  "redes": {
+    "github": "SantiDev11",
+    "linkedin": "https://www.linkedin.com/in/",
+    "linkedinUsuario": "",
+    "correo": "kevinpedraza@ejemplo.com"
+  }
+}
